@@ -1,0 +1,34 @@
+{
+  "WARNING0001": {
+    "messages": {
+      "What is the problem ?": {
+        "Pipeline version not set to latest ": ""
+      },
+      "Why is it being shown ?": {
+        "The pipeline version in use is not set to latest": ""
+      },
+      "What can you do? ": {
+        "Using latest version ensures you get changes as they released ": "",
+        "see the selection below on how to use latest": ""
+      },
+      "Additional Documentation": {
+        "To globally set the pipeline version to latest": "",
+        "Go to <jenkins-server>/configure, Global pipeline Libraries": "",
+        "set the version for the library pointing to 'shared library url'": ""
+      }
+    },
+    "internal": {
+      "buildTech": "all"
+    }
+  },
+  "WARNING0002": {
+    "messages": {
+      "What is the problem ?": {
+        "This is the demonstration ": ""
+      }
+    },
+    "internal": {
+      "buildTech": "all"
+    }
+  }
+}

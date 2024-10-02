@@ -1,0 +1,11 @@
+{
+  "INFO0000" : {
+    "messages" : {
+      "the full release notes !" : " welcome to cicd"
+    },
+    "internal" : {
+      "buildTech" : "all",
+      "Cartoon character associated with this message" : "Fred Flintstone"
+    }
+  }
+}

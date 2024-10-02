@@ -1,0 +1,142 @@
+{
+  "ERROR0000": {
+    "messages": {
+      "What is the problem ?": {
+        "Inavlid/missing scm/build_options parameter 'buildTech' ": ""
+      },
+      "Why is it being shown ?": {
+        "Either the buildTech parameter is missing, or it's an invalid value": ""
+      },
+      "What can you do? ": {
+        "Set the buildTech parameter in scm/build_otions to one of ": "mvn, python, angularnpm, go, dotNet"
+      },
+      "Additional Info/documentation": {
+        "Nothing": ""
+      }
+    },
+    "internal": {
+      "buildTech": "all"
+    }
+  },
+  "ERROR0001": {
+    "messages": {
+      "What is the problem ?": {
+        "Pipeline couldn't  retrieve Git repo information": ""
+      },
+      "Why is it being shown ?": {
+        "Github Repo URL may not match the expected format": "https://github.com/pavan-unnam/<repo?"
+      },
+      "What can you do? ": {
+        "Review the repo URL to match expected format": ""
+      },
+      "Additional Info/documentation": {
+        "Nothing": ""
+      }
+    },
+    "internal": {
+      "buildTech": "all",
+      "subSystem": "git"
+    }
+  },
+  "ERROR0002": {
+    "messages": {
+      "What is the problem ?": {
+        "Problem reading/processing POM.xml": ""
+      },
+      "Why is it being shown ?": {
+        "Either POM.xml is not found, or the Group, Artifact, VersionID info can't be read": ""
+      },
+      "What can you do? ": {
+        "Verify the POM.xml exists": ""
+      },
+      "Additional Info/documentation": {
+        "Nothing": ""
+      }
+    },
+    "internal": {
+      "buildTech": "mvn"
+    }
+  },
+  " ERROR0003 ": {
+    " messages ": {
+      " What is the problem ? ": {
+        "Pipeline createRelease option selected against incorrect branch": ""
+      },
+      " Why is it being shown ? ": {
+        " The branch to use must be either ' master ' or set in build_optons parameter 'releaseBranch'": ""
+      },
+      " What can you do ? ": {
+        " Set parameter ' releaseBranch ' in build_options ": " "
+      },
+      " Additional Documentation ": {
+        " See parameter releaseBranch ' in scm / build_options ": ""
+      },
+      " internal ": {
+        "buildTech": "all"
+      }
+    }
+  },
+  " ERROR0004 ": {
+    " messages ": {
+      " What is the problem ? ": {
+        " Problem accessing / creating tag info ": ""
+      },
+      " Why is it being shown ? ": {
+        " Does the Github App ID used have rights to read / create tags ? ": ""
+      },
+      " What can you do ? ": {
+        " Verify the Github App ID has access to the repo . Run job ": ""
+      },
+      " internal ": {
+        " buildTech ": " all ",
+        " subSystem ": " git "
+      }
+    }
+  },
+  " ERROR0005 ": {
+    " messages ": {
+      " What is the problem ? ": {
+        " The POM app version is updated before building ": "",
+        "it is updated either": "",
+        "when creating a release version or, for snapshot versions, to add the git branch name to it.": "",
+        "branch names are added to the version to easily identify which branch an artifact originated from in Nexus Repo server": ""
+      },
+      " Why is it being shown ? ": {
+        " There was a problem trying to update the version number in the build job ": "check th the build output for more information"
+      },
+      " Additional Documentation ": {
+        " For SNAPSHOT builds, you can disable adding the branch name": "set build_options parameter 'useBranchNameInAppVersion to false",
+        "The POM version number is ONLY set on the Jenkins server": "the updated POM file is NEVER pushed back to git",
+        "scm/build_options page": ""
+      },
+      " internal ": {
+        " buildTech ": "mvn"
+      }
+    }
+  },
+    " ERROR0006 ": {
+      " messages ": {
+        " What is the problem ? ": {
+          " The pipeline could had problems running a build, test or uploadCmd": ""
+        },
+        " Why is it being shown ? ": {
+          " it's likely a problem with the command/parameters being run ": ""
+        },
+        " What can you do ? ": {
+          " Review/research ": "",
+          "- the errors in the build log preceding this message" : "",
+          "Verify" : "",
+          "- The command you are running (e.g 'mvn package'), etc is valid": "",
+          "- The build tool version (eg. JDK version, python version, etc) is the correct version" : "",
+          "- the build container in use supports the correct JDK version" : "",
+          "- any dependencies are downloaded, available" : ""
+        },
+        " Additional Documentation ": {
+          " post to g-chat": ""
+        },
+        " internal ": {
+          " buildTech ": "all"
+        }
+  }
+}
+}
